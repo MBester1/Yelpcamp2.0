@@ -1,0 +1,104 @@
+<% layout('layouts/boilerplate') %>
+<div class="container .d-flex justify-content-center align-items-center mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+      <div class="card shadow">
+        <img
+          src="https://lp-cms-production.imgix.net/2020-11/wildcamping.jpg?auto=format&w=1440&h=810&fit=crop&q=75"
+          class="card-img-top"
+          alt=""
+        />
+        <div class="card-body">
+          <div class="card-title">Register</div>
+          <form
+            action="/register"
+            method="POST"
+            class="validated-form"
+            novalidate
+          >
+            <div class="mb-3">
+              <label class="form-label" for="username">Username:</label>
+              <input
+                class="form-control"
+                type="text"
+                id="username"
+                name="username"
+                required
+                autofocus
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="email">Email:</label>
+              <input
+                class="form-control"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="password">Password:</label>
+              <input
+                class="form-control"
+                type="password"
+                id="password"
+                name="password"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="d-grid">
+              <button class="btn btn-success">Log in</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="row">
+  <h1 class="text-center">Register</h1>
+  <div class="col-md-6 offset-3">
+    <form action="/register" method="POST" class="validated-form" novalidate>
+      <div class="mb-3">
+        <label class="form-label" for="username">Username:</label>
+        <input
+          class="form-control"
+          type="text"
+          id="username"
+          name="username"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="email">Email:</label>
+        <input
+          class="form-control"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="password">Password:</label>
+        <input
+          class="form-control"
+          type="password"
+          id="password"
+          name="password"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <button class="btn btn-success">Register</button>
+    </form>
+  </div>
+</div> -->
